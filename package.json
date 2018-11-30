@@ -1,0 +1,30 @@
+{
+  "name": "git-test",
+  "version": "1.0.0",
+  "description": "This is a test package for learning git and node",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "test",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramiz-rahman/git-test.git"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "git",
+    "bootsrtap"
+  ],
+  "author": "Ramiz Rahman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramiz-rahman/git-test/issues"
+  },
+  "homepage": "https://github.com/ramiz-rahman/git-test#readme",
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  }
+}
