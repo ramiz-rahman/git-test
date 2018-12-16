@@ -65,7 +65,7 @@
             </li>
           </ul>
           <span class="navbar-text">
-            <a data-toggle="modal" data-target="#loginModal">
+            <a id="loginButton">
               <span class="fa fa-sign-in"></span> Login
             </a>
           </span>
@@ -254,7 +254,7 @@
           </div>
           <div class="col-12 col-sm align-self-center">
               <a class="btn btn-warning btn-block nav-link"
-                 role="button" data-toggle="modal" data-target="#reservationModal"
+                 role="button" id="reservationButton"
                  >Reserve Table</a>
           </div>
       </div>
@@ -263,7 +263,7 @@
     <div class="container">
       <div class="row row-content">
         <div class="col">
-          <div id="mycarousel" class="carousel sldie" data-ride="carousel">
+          <div id="mycarousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner" role="listbox">
 
               <div class="carousel-item active">
@@ -492,6 +492,14 @@
             $('#carouselButton').children('span').addClass('fa-pause')
           }
         });
+
+        $('#reservationButton').click(function() {
+          $('#reservationModal').modal('show');
+        })
+
+        $('#loginButton').click(function() {
+          $('#loginModal').modal('show');
+        })
       });
     </script>
   </body>
